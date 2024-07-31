@@ -1,8 +1,19 @@
+# Site settings
+title: My Documentation Site
+description: Documentation for my project
+url: "https://your-username.github.io"
+baseurl: "/docs" # Assuming your docs are served from the /docs subdirectory
+
+# Build settings
+source: docs # Set the source to the docs folder
+markdown: kramdown
+theme: minima
+
+
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
 include:
-  - README.md
   - docs/architecture.md
